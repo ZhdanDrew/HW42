@@ -1,0 +1,35 @@
+
+.slider-cars {
+    height: 1300px;
+    overflow: hidden;
+}
+
+.slider-cars .carousel-item {
+    width: 400px; 
+}
+
+.slider-cars .carousel-item>img {
+    width: 100%; 
+    height: 650px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.card{
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-cars .carousel-item.active>img {
+    filter: blur(0px) grayscale(0%);
+}
+
+.slider-cars .indicators .indicator-item {
+    width: 15px;
+    height: 15px;
+    background-color: #313131;
+    opacity: 0.7; 
+    transition: background-color 0.3s ease;
+}
